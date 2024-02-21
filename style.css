@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap");
+* {
+  font-family: "Work Sans", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.search-section {
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+}
+
+.search-section #text {
+  padding: 10px;
+}
+
+.search-section #search {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.weather-section {
+  background: linear-gradient(90deg, #1b89ff 0%, rgba(41, 182, 254, 0.7215686275) 100%);
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+  padding-left: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+h4 {
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.8509803922);
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  height: 200px;
+  color: #fff;
+  justify-content: center;
+}
+
+.information {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+
+.seperator {
+  width: 3px;
+  height: 43px;
+  border-radius: 30px;
+  background-color: #fff;
+  margin-top: 22px;
+}
+
+.temp {
+  font-size: 65px;
+  font-weight: lighter;
+}
+
+.week-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cloud {
+  display: none;
+}
+
+.moon {
+  display: none;
+}
+
+.thunder {
+  display: none;
+}
+
+.day .weather-section {
+  background: linear-gradient(90deg, #1b89ff 0%, rgba(41, 182, 254, 0.7215686275) 100%);
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+  padding-left: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.day .sun {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  box-shadow: inset 8px -5px 19px 0px #ffcf00;
+  background-color: #fffdb0;
+  top: -16px;
+  right: -18px;
+  z-index: 4;
+}
+.day .sun-shadow {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.32);
+  position: absolute;
+  top: -98px;
+  right: -103px;
+  box-shadow: inset 0px 25px -2px #fff;
+  z-index: 3;
+}
+.day .shadow-circle {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 0px #fff;
+  position: absolute;
+  top: -147px;
+  right: -132px;
+  z-index: 1;
+}
+.day .cloud {
+  display: none;
+}
+.day .moon {
+  display: none;
+}
+.day .thunder {
+  display: none;
+}
+
+.rain-cloud {
+  display: none;
+}
+
+.night .thunder {
+  display: none;
+}
+.night .weather-section {
+  background: linear-gradient(90deg, #5569ec 0%, #9878de 100%);
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+  padding-left: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.night .cloud {
+  display: block;
+  top: -20px;
+  right: -41px;
+  position: absolute;
+}
+.night .cloud-image {
+  width: 88%;
+}
+.night .moon {
+  top: -4px;
+  right: -68px;
+  position: absolute;
+  display: block;
+}
+.night .moon-image {
+  width: 45%;
+}
+.night .dew-drops {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3882352941);
+  box-shadow: 0px 25px -2px #fff;
+}
+.night .group-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  position: absolute;
+  top: 24px;
+  right: 183px;
+}
+.night .group-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  position: absolute;
+  top: 63px;
+  right: 221px;
+}
+.night .group-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  position: absolute;
+  top: 107px;
+  right: 266px;
+}
+
+.rainy .weather-section {
+  background: linear-gradient(90deg, #19c9a3 0%, #56e5a0 100%);
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+  padding-left: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.rainy .rain-cloud {
+  position: absolute;
+  display: block;
+  top: -66px;
+  right: -71px;
+  z-index: 2;
+}
+.rainy .rain-cloud-image {
+  width: 80%;
+}
+.rainy .thunder-image {
+  width: 13%;
+}
+.rainy .thunder {
+  display: block;
+  position: absolute;
+  top: 83px;
+  right: -183px;
+  z-index: 1;
+}
+.rainy .dew-drops {
+  width: 40px;
+  transform: rotate(-49deg);
+  height: 10px;
+  border-radius: 30%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8784313725), rgba(241, 241, 241, 0.1098039216));
+}
+.rainy .group-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  position: absolute;
+  top: 114px;
+  right: 45px;
+}
+.rainy .group-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  position: absolute;
+  top: 159px;
+  right: 29px;
+}
+.rainy .group-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  position: absolute;
+  top: 42px;
+  right: 232px;
+}/*# sourceMappingURL=style.css.map */
